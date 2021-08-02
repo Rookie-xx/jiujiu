@@ -4,7 +4,7 @@
 
    ```mermaid
    graph LR
-   a[工作区]-.add.->b((暂存区))-.w.->c[仓库区 ]
+   a[工作区]-.add.->b((暂存区))-.commit.->c[仓库区 ]
    ```
 
    
@@ -33,7 +33,28 @@
 
      > 配置文件位置：project/.git/config
 
-   
+   > 配置用户名
+   >
+   > ```git
+   > e.g. 将用户名设置为tiny
+   > git config --system user.name tiny
+   > ```
+   >
+   > 配置用户邮箱
+   >
+   > ```git
+   > e.g. 将邮箱设置为lvze@126.com
+   > git config --system user.email lvze@126.com
+   > ```
+   >
+   > 配置编译器
+   >
+   > ```
+   > e.g. 将编译器设置为pycahrm
+   > git config core.editor pycharm
+   > ```
+   >
+   > 
 
 4. 基本命令
 
@@ -48,3 +69,24 @@
      > git status
      >
      > 说明：初始化仓库后默认工作在master分支，当工作区与仓库区不一致时会有提示。
+
+   + 将工作内容记录到暂存区
+
+     > git add [files..]
+     >
+     > ```git
+     > e.g.  将 a b 记录到暂存区
+     > git add a b
+     > 
+     > e.g. 将所有文件（不包含隐藏文件）记录到暂存区
+     > git add *
+     > ```
+
+   + 取消文件暂存记录
+
+     > git rm --cached [file]
+
+   + 将文件同步到本地仓库
+
+     > 
+
