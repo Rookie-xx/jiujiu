@@ -139,16 +139,43 @@
 
    + 查看所有操作记录
 
-     > git relog
+     > git reflog
      >
      > 注意：最上面的为最新记录，可以利用commit_id去往任何操作位置
 
+   + 创建标签
+
+     > 标签：在项目的重要commit位置添加快照，保存当时的工作状态，一般用于版本的迭代。
+
+     > git tag  [tag_name] [commit_id] -m [message]
+>
+     > 说明：commit_id可以不写则默认标签表示最新的commit_id位置，message也可以不写，但是最好添加
+>
+     > ```
+     > e.g. 在最新的commit出添加标签v1.0
+     > git tag v1.0 -m '版本1'
+     > ```
+     
+   + 查看标签
+   
+     > git tag 查看标签列表
+   >
+     > git show [tag_name] 查看标签详细信息
+   
+   + 去往某个标签节点
+   
+     > git reset --hard [tag]
+   
+   + 删除标签
+   
+     > git tag -d [tag]
+   
    + 
-
-     > 
-
+   
+   + 
+   
      
-
+   
      
-
+   
      
