@@ -88,5 +88,30 @@
 
    + 将文件同步到本地仓库
 
-     > 
+     > git commit [file] -m [message]
+     >
+     > 说明：-m表示添加一些同步信息，表达同步内容
+     >
+     > ```git
+     > e.g. 将暂存区所有记录同步到仓库区
+     > git commit -m 'add files'
+     > ```
+
+   + 查看commit日志记录
+
+     > git log
+     >
+     > git log --pretty=oneline
+
+   + 比较工作区文件和仓库文件差异
+
+     > git diff [file]
+
+   + 将暂存区或者某个commit点文件恢复到工作区
+
+     > git checkout [commit]  --  [file]
+     >
+     > + --是为了防止误操作，checkout还有切换分支的作用
+
+   + 
 
