@@ -258,7 +258,50 @@ git remote add origin https://github.com/xxxxxx
 
   > git remote rm [origin]
 
-+ 
++ 查看连接的主机
+
+  > git remote
+  >
+  > 注意：一个git项目连接的远程主机名不会重复
+
++ 将本地分支推送给远程仓库
+
+```
+将master分支推送给origin主机远程仓库，第一次推送分支使用-u表示与远程对应分支建立自动关联
+git push -u origin master
+```
+
++ 将本地标签推送给远程仓库
+
+  >  git push origin --tags
+
++ 删除远程分支
+
+  > git branch -a 查看所有分支
+  >
+  > git push origin [:branch]删除远程分支
+  >
+  > ```
+  > git push origin :alex
+  > ```
+
++ 其他推送方法
+
+  > git push --force origin用于本地版本比远程版本旧时强行推送本地本班
+
+  > git push origin [tag] 推送本地标签到远程
+
+  > *git push origin --tags 推送本地所有标签到远程*
+
+  > git push origin --delete tag [tagname] 删除远程仓库标签
+
++ 从远程获取代码
+
+  > git pull
+
+  > 将远程分支master拉取到本地，作为tmp分支
+  >
+  > git fetch origin master:tmp
 
 ### 10.
 
