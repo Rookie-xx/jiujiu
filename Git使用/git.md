@@ -302,6 +302,10 @@ git push -u origin master
   > 将远程分支master拉取到本地，作为tmp分支
   >
   > git fetch origin master:tmp
+  
+  > 区别
+  >
+  > > pull
 
 ### 10.
 
