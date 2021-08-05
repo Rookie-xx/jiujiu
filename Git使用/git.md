@@ -287,7 +287,7 @@ git push -u origin master
 
 + 其他推送方法
 
-  > git push --force origin用于本地版本比远程版本旧时强行推送本地本班
+  > git push --force origin用于本地版本比远程版本旧时强行推送本地版本
 
   > git push origin [tag] 推送本地标签到远程
 
@@ -305,9 +305,11 @@ git push -u origin master
   
   > 区别
   >
-  > > pull
+  > > pull将远程内容直接拉取到本地，并和对应分支内容进行合并
+  > >
+  > > fetch将远程分支内容拉取到本地，但是不会和本地对应分支合并，可以自己判断后再使用merge合并
 
-### 10.
+### 10.jian
 
 
 
